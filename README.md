@@ -31,8 +31,8 @@ $ mysql -u root
 $ CREATE DATABASE sails-boilerplate;
 ```
 
-Update the config for database consumer application in the file present in
-consumer-payments/config/connections.js
+Update the config for database Sails boilerplate in the file present in
+sails-boilerplate/config/connections.js
 
 ```sh
 $ grunt db:migrate:up

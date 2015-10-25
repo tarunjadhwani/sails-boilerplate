@@ -1,0 +1,11 @@
+html
+  head
+    title Sails Boilerplate
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css')
+    block scripts
+      script(src='//code.jquery.com/jquery-1.11.3.min.js')
+      script(src='//code.jquery.com/jquery-migrate-1.2.1.min.js')
+  body
+    include ./includes/menu.jade
+    .container
+      block content

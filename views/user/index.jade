@@ -1,0 +1,15 @@
+extends ../layout.jade
+
+block content
+  table.table.table-condensed.table-bordered.table-striped
+    th Name
+    th Email
+    th Created At
+      - each user in users
+        tr
+          td
+            = user.name
+          td
+            = user.email
+          td
+            = user.formated_time()

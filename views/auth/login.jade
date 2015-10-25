@@ -1,0 +1,16 @@
+
+extends ../layout.jade
+
+block content
+  h1 User Login
+  //- - if (typeof(message) !== 'undefined'){
+  //-   h3= message
+  //- -}
+  .row
+    form(method='POST', action='/login', class='form col-sm-6')
+      .form-group
+        input(type='email', name='email', class='form-control', placeholder='Email')
+      .form-group
+        input(type='password', name='password', class='form-control', placeholder='Password')
+      .form-group
+        input(type='submit', value='Login', class='btn btn-primary')

@@ -1,0 +1,23 @@
+a(href="/users/") All Users
+=" | "
+a(href="/logout") Logout
+=" | "
+a(href="/signup") Signup
+h1 All Users
+table
+  th Users
+  th Actions
+  - each user in users
+    tr
+      td
+        = user.name
+        = user.email
+        = user.password
+        = user.createdAt
+        = user.updatedAt
+      td
+        //- a(href="/users/#{user.id}") Show
+        //- = " | "
+        //- a(href="/users/edit/#{user.id}") Edit
+        //- = " | "
+        //- a(href="/users/delete/#{user.id}", data-method="delete") Delete

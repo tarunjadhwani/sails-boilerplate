@@ -1,0 +1,15 @@
+
+extends ../layout.jade
+
+block content
+  h1 User Registration
+  .row
+    form(method='POST', action='/users/create', class='form col-sm-6')
+      .form-group
+        input(type='text', name='name', class='form-control', placeholder='Name')
+      .form-group
+        input(type='email', name='email', class='form-control', placeholder='Email')
+      .form-group
+        input(type='password', name='password', class='form-control', placeholder='Password')
+      .form-group
+        input(type='submit', value='Register', class='btn btn-primary')

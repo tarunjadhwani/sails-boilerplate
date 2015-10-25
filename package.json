@@ -54,7 +54,6 @@
     "karma": "^0.13.10",
     "karma-firefox-launcher": "^0.1.6",
     "karma-jasmine": "^0.3.6",
-    "q": "^1.4.1",
     "sails-hook-autoreload": "^0.12.0"
   }
 }

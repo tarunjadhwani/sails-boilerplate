@@ -2,8 +2,14 @@
 
 This is a simple boiler plate developed in [sails.js](http://sailsjs.org/) that has all packages and configurations that are needed to start building a production level application.
 
-### Version
-0.0.1
+##### Features
+* User authentication
+* Application autoreload on file change
+* Logging into a file (application.log)
+* Database migration tool that enables versioning of migrations
+* Bootstrap and Jquery for frontend
+* Jade - A templating engine enabled
+* With testing framework setup (Karma/Jasmine)
 
 ### Tech
 
@@ -31,8 +37,8 @@ $ mysql -u root
 $ CREATE DATABASE sails-boilerplate;
 ```
 
-Update the config for database in the application which is present in
-sails-boilerplate/config/connections.js
+Update the config for database consumer application in the file present in
+consumer-payments/config/connections.js
 
 ```sh
 $ grunt db:migrate:up
@@ -63,5 +69,4 @@ $ karma start karma.conf.js
 * [winston](https://github.com/winstonjs/winston) - For logging on to a file (application.log in our case)
 * [karma-jasmine](https://github.com/karma-runner/karma-jasmine) - For testing in jasmine with karma plugin
 * [sails-hook-autoreload](https://github.com/sgress454/sails-hook-autoreload) - Sails JS hook to autoreload controllers, models and locales when changed.
-
 

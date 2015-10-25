@@ -31,7 +31,7 @@ $ mysql -u root
 $ CREATE DATABASE sails-boilerplate;
 ```
 
-Update the config for database Sails boilerplate in the file present in
+Update the config for database in the application which is present in
 sails-boilerplate/config/connections.js
 
 ```sh
